@@ -11,7 +11,7 @@ var pd = {
         pd.setup.applyDom();
       } else {
         if (confirm('This script can only be run from your own user profile on reddit. Would you like to go there now?')) {
-          document.location = 'https://old.reddit.com/u/me/overview';
+          document.location = 'https://reddit.com/u/me/overview';
         }
       }
     }
@@ -22,7 +22,7 @@ var pd = {
         if (typeof window.bookmarkver === 'undefined' || window.bookmarkver !== pd.bookmarkver) {
           if (confirm('There\'s been an update to the bookmarklet. Would you like to go to the Github repo in order to get the latest version?')) {
             alert('Sadly, there]\'s no way to automatically update the bookmark. :/\nScroll down to the "Install PowerDeleteSuite" button on the github page. Replace your CURRENT bookmark with the one found there to install the latest bookmark.');
-            document.location.href = 'https://github.com/j0be/PowerDeleteSuite';
+            document.location.href = 'https://github.com/Bango88/PowerDeleteSuite';
             return false;
           }
         }
